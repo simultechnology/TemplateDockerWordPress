@@ -1,5 +1,9 @@
 # DockerによるWordpress構築テンプレート
 
+参考URL
+
+[https://docs.docker.com/compose/wordpress/]
+(https://docs.docker.com/compose/wordpress/)
 ## 1. 起動について
 
 コンテナ群のバックグラウンド起動
