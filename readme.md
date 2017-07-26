@@ -36,6 +36,13 @@ docker exec -it templatedockerwordpress_db_1 /bin/bash
 ```
 ※　「templatedockerwordpress_db_1」が異なっている場合は、コンテナIDを指定
 
+ローカルのsqlをコンテナ上で実行
+```
+cd /tmp/sqls
+mysql -u wordpress -h db  -p wordpress < xxxxxxxxx.sql
+
+```
+
 ## 3. 停止、削除について
 
 
@@ -50,5 +57,9 @@ docker-compose stop
 ```
 docker-compose down
 ```
+
+## 4. DBクライアントツールについて
+
+localhost:33306でmysqlに接続できるので、[Sequel Pro](https://www.sequelpro.com/)等で接続できる
 
 
