@@ -1,4 +1,4 @@
-# DockerによるWordpress構築テンプレート
+# DockerによるWordPress構築テンプレート
 
 参考URL
 
