@@ -6,7 +6,7 @@ services:
      volumes:
        - "$PWD/db_data:/var/lib/mysql"
        - "$PWD/sqls:/tmp/sqls"
-     restart: always
+     restart: "no"
      ports:
        - "33306:3306"
      environment:
@@ -23,7 +23,7 @@ services:
        - "$PWD/wordpress:/var/www/html"
      ports:
        - "8300:80"
-     restart: always
+     restart: "no"
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: wordpress
